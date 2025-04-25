@@ -21,10 +21,8 @@ function App() {
             logic, problem-solving, computers, innovation and making things look good.
             </p>
           </div>
-          
       </div>
     </div>
-      
     </>
   )
 }
