@@ -1,26 +1,35 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import profilePicture from '/profile_picture_1.PNG'
-import './App.css'
+import Card from './components/Card/Card'
+import Profile from './components/Profile/Profile'
+import CtaLink from './components/CtaLink/CtaLink'
+import Experience from './components/Experience/Experience'
+import Projects from './components/Projects/Projects'
+import AboutMe from './components/AboutMe/AboutMe'
 
 function App() {
 
+
+
   return (
     <>
-    <div className="container">
-      <div className="card">
-        <div className="image">
-            <div className="image_wrapper">
-              <img className='image_profile' src={profilePicture} alt="" />
-            </div>
-          </div>
-          <h1>Hey, I'm Daniel Ciciliani</h1>
-          <div className="intro">
-            <p>I am a frontend developer with more than 3 years of experience</p>
-            <p>I'm lucky that coding brings together the most I like: 
-            logic, problem-solving, computers, innovation and making things look good.
-            </p>
-          </div>
+    <div className="w-screen h-[100%] bg-gradient-to-br from-[#1D1D1D] to-[#1D1A2B]">
+      <div className="w-11/12- w-[90%] mx-auto">
+        <div className="flex flex-col gap-10 pt-10">
+          <Card>
+            <Profile></Profile>
+          </Card>
+          <CtaLink></CtaLink>
+          <Card>
+            <Experience></Experience>
+          </Card>
+          <Card>
+            <Projects></Projects>
+          </Card>
+          <Card>
+            <AboutMe></AboutMe>
+          </Card>
+
+        </div>
       </div>
     </div>
     </>
