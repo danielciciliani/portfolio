@@ -21,18 +21,18 @@ Designed wireframes based on client needs, proposing functional and modern alter
     return(
         <>
         <div className="flex flex-col gap-10">
-            <h2 className="text-4xl">Work experience</h2>
+            <h2 className="text-5xl font-extrabold ">Work experience</h2>
             {
                 experiences.map((experience) => (
                     <div className="" key={experience.id}>
                         <div>
-                            <div className="text-3xl">{experience.jobTitle}</div>
-                            <div className="text-2xl">{experience.company}</div>
-                            <div className="">{experience.from}</div>
+                            <div className="text-4xl">{experience.jobTitle}</div>
+                            <div className="text-3xl">{experience.company}</div>
+                            <div className="text-md">{experience.from}</div>
                             <div className="">{experience.to}</div>
                         </div>
                         <div>
-                            <p className="">{experience.details}</p>
+                            <p className="text-1xl">{experience.details}</p>
                         </div>
                     </div>
                 ))

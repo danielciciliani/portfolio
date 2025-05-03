@@ -1,6 +1,3 @@
-import { useState } from "react";
-import App from "../../App"
-
 
 function CtaLink(){
 
@@ -16,7 +13,7 @@ const links = [
             {
                 
                 links.map( (e) => ( 
-                    <div key={e.id} className="border-1  border-slate-500 rounded-xl px-5 py-1 text-color-base min-w-[150px] text-center">
+                    <div key={e.id} className="border-1  border-slate-500 rounded-2xl px-5 py-1 text-color-base min-w-[150px] text-center hover:bg-blue-500 transition-all">
                         <a 
                             href={e.link}
                         >

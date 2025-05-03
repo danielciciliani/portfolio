@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
 
-body {
-  font-family: 'Lato', sans-serif;
+@tailwind utilities;
+
+@theme{
+  --font-lato: 'Lato', sans-serif;
+  --color-base: rgba(255, 255, 255, 0.87);
 }
+
+@layer utilities {
+  .main-gradient {
+    @apply bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent;
+  }
+}
+
 
 :root {
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

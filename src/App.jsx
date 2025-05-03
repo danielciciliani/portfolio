@@ -8,12 +8,10 @@ import AboutMe from './components/AboutMe/AboutMe'
 
 function App() {
 
-
-
   return (
     <>
-    <div className="w-screen h-[100%] bg-gradient-to-br from-[#1D1D1D] to-[#1D1A2B]">
-      <div className="w-11/12- w-[90%] mx-auto">
+    <div className="font-lato w-screen h-full">
+      <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
         <div className="flex flex-col gap-10 pt-10">
           <Card>
             <Profile></Profile>
