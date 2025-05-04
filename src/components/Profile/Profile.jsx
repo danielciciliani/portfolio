@@ -7,7 +7,7 @@ function Profile(){
             <div className="flex flex-col items-center">
                 <div className="w-[100%] flex justify-center py-10">
                     <div className="w-25 h-25 rounded-full">
-                        <img className='rounded-full h-[100%] w-[100%] object-cover object-top' src='/profile_picture_1.png' alt="Profile picture" />
+                        <img className='rounded-full h-[100%] w-[100%] object-cover object-top' src='/profile_picture_opt.png' alt="Profile picture" />
                     </div>
                 </div>
                 <h1 className="font-extrabold text-center">Hey, I'm <span className='main-gradient pt-10'>Daniel Ciciliani</span></h1>
