@@ -5,6 +5,7 @@ import CtaLink from './components/CtaLink/CtaLink'
 import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import AboutMe from './components/AboutMe/AboutMe'
+import Panda from './components/Panda/Panda'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Card>
             <Profile></Profile>
           </Card>
+          <Panda></Panda>
           <CtaLink></CtaLink>
           <Card>
             <Experience></Experience>

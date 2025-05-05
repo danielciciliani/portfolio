@@ -1,9 +1,10 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function CtaLink(){
 
 const links = [
-    {id: 1, link: 'linkedin.com' , text: 'linkedin'},
-    {id: 2, link: 'github.com' , text: 'github'}
+    {id: 1, link: 'linkedin.com' , text: 'linkedin', icon: FaLinkedin},
+    {id: 2, link: 'github.com' , text: 'github', icon: FaGithub}
 ];
 
 
@@ -12,17 +13,21 @@ const links = [
             <div className="flex gap-4 content-between w-[100%] justify-center">
             {
                 
-                links.map( (e) => ( 
-                    <div key={e.id} className="border-1  border-blue-500 rounded-2xl px-5 py-1 text-color-base min-w-[150px] text-center hover:border-pink-500 hover:scale-110 transition-all">
+                links.map( (e) => {
+                    const Icon = e.icon;
+                    return ( 
+                    <div key={e.id} className="border-1  border-blue-500 rounded-2xl px-5 py-1 text-color-base min-w-[150px] hover:border-pink-500 hover:text-white hover:scale-110 transition-all duration-200">
                         <a 
                             href={e.link}
-
+                            target="_blank"
+                            className="flex gap-2 items-center justify-center"
                         >
+                            <Icon size={20}></Icon>
                             {e.text}  
                         </a>
                     </div>
-                
-                    ))}
+                    );
+                })}
             </div>
         </>
     );
