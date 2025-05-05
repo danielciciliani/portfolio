@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
 
 @tailwind utilities;
 
-@theme{
-  --font-lato: 'Lato', sans-serif;
+@theme {
+  --font-lato: "Lato", sans-serif;
   --color-base: rgba(255, 255, 255, 0.87);
 }
 
@@ -17,12 +17,13 @@
   }
   .border-gradient {
     border: 1px solid transparent;
-    background-image: linear-gradient(#1e1e1e, #1e1e1e), linear-gradient(to right, #ec4899, #3b82f6);
+    background-image:
+      linear-gradient(#1e1e1e, #1e1e1e),
+      linear-gradient(to right, #ec4899, #3b82f6);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
 }
-
 
 :root {
   line-height: 1.5;
@@ -40,7 +41,6 @@ a {
   font-weight: 500;
   text-decoration: inherit;
 }
-
 
 h1 {
   font-size: 3.2em;
@@ -65,5 +65,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-
