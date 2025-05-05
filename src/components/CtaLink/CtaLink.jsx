@@ -1,4 +1,6 @@
 import { FaGithub, FaLinkedin, FaCloudDownloadAlt } from "react-icons/fa";
+import FadeIn from "../../utils/Animations/FadeIn";
+
 
 function CtaLink() {
   const links = [
@@ -9,6 +11,7 @@ function CtaLink() {
 
   return (
     <>
+    <FadeIn>
       <div className="flex gap-2 md:gap-4 content-between w-full justify-center">
         {links.map((e) => {
           const Icon = e.icon;
@@ -33,6 +36,7 @@ function CtaLink() {
           );
         })}
       </div>
+      </FadeIn>
     </>
   );
 }

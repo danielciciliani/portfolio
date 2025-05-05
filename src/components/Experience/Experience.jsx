@@ -76,7 +76,7 @@ function Experience() {
         <h2 className="text-5xl font-extrabold ">Work experience</h2>
         {experiences.map((experience) => (
           <>
-            <div className="flex flex-col gap-2 relative">
+            <div key={experience.id} className="flex flex-col gap-2 relative">
               <div className="h-[100%] w-[1px] border-[1px] border-pink-500 absolute top0 -left-[21px]"></div>
               <div className="h-[20px] w-[20px] border-[2px] border-gradient bg-[#1e1e1e] absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"></div>
 
