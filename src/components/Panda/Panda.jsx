@@ -6,7 +6,7 @@ function Panda() {
       <div className="w-full flex flex-row justify-center">
         <motion.div className="w-30 h-30 md:w-40 md:h-40"
         initial={{ opacity: 0, scale: 0}}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.4,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},
@@ -20,7 +20,7 @@ function Panda() {
         </motion.div>
         <motion.div className="w-30 h-30 md:w-40 md:h-40"
         initial={{ opacity: 0, scale: 0}}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.4,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},
@@ -34,7 +34,7 @@ function Panda() {
         </motion.div>
         <motion.div className="w-30 h-30 md:w-40 md:h-40"
         initial={{ opacity: 0, scale: 0}}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.4,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},

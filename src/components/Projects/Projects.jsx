@@ -4,7 +4,6 @@ function Projects() {
   const projects = ProjectsData;
 
   return (
-    <>
       <div className="flex flex-col gap-10">
         <h2 className="text-5xl font-extrabold">Projects</h2>
         {projects.map((project) => (
@@ -40,7 +39,6 @@ function Projects() {
           </div>
         ))}
       </div>
-    </>
   );
 }
 
