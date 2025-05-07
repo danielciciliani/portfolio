@@ -10,8 +10,15 @@ import "./index.css";
 import Scroll from "./utils/Animations/Scroll";
 import FadeIn from "./utils/Animations/FadeIn";
 import FadeInFromBottom from "./utils/Animations/FadeInFromBottom";
+import Contact from "./components/Contact/Contact";
+import { ContactLink, Links } from "./utils/LinksData";
+
 
 function App() {
+  
+  const links = Links;
+  const contactLink = ContactLink;
+  
   return (
     <>
       <Scroll></Scroll>
@@ -24,7 +31,7 @@ function App() {
               </Card>
             </FadeIn>
             <Panda></Panda>
-            <CtaLink></CtaLink>
+            <CtaLink links={links}></CtaLink>
             <FadeInFromBottom duration={1.5}>
               <Card>
                 <Experience></Experience>
@@ -40,6 +47,13 @@ function App() {
                 <AboutMe></AboutMe>
               </Card>
             </FadeInFromBottom>
+            <FadeIn delay={1}>
+              <Card>
+                <Contact>
+                  <CtaLink links={contactLink}></CtaLink> 
+                </Contact>
+              </Card>
+            </FadeIn>
           </div>
         </div>
       </div>

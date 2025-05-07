@@ -1,12 +1,8 @@
 import { FaGithub, FaLinkedin, FaCloudDownloadAlt } from "react-icons/fa";
 import FadeIn from "../../utils/Animations/FadeIn";
+import {motion} from "motion/react";
 
-function CtaLink() {
-  const links = [
-    { id: 1, link: "linkedin.com", text: "linkedin", icon: FaLinkedin },
-    { id: 2, link: "github.com", text: "github", icon: FaGithub },
-    { id: 3, link: "github.com", text: "CV", icon: FaCloudDownloadAlt },
-  ];
+function CtaLink({ links }) {
 
   return (
     <>
@@ -15,13 +11,22 @@ function CtaLink() {
           {links.map((e) => {
             const Icon = e.icon;
             return (
-              <div
+              <motion.div
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 15,
+              }}
                 key={e.id}
                 className="
                     text-sm md:text-xl border-1  border-blue-500 rounded-2xl 
                     px-5 py-1 text-color-base min-w-[30%] md:min-w-[150px]
-                    hover:border-pink-500 hover:text-white hover:scale-110
-                    transition-all duration-200"
+                    hover:border-pink-500 hover:text-white cursor-pointer"
               >
                 <a
                   href={e.link}
@@ -31,7 +36,7 @@ function CtaLink() {
                   <Icon size={20}></Icon>
                   {e.text}
                 </a>
-              </div>
+              </motion.div>
             );
           })}
         </div>
