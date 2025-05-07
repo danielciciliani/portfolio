@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 
-function FadeInFromBottom({ children, className = "", delay = 0, duration = 1.5 }) {
+function FadeInFromBottom({ children, className = "", delay = 0, duration = 1.5, once=true}) {
   return (
     <motion.div
       className={className}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once, amount: 0.1 }}
       onViewportEnter={(entry) => console.log(entry.isIntersecting)}
       transition={{
         duration,

@@ -16,7 +16,7 @@ function Experience() {
               key={i}
               className="flex flex-col gap-2 relative pb-10 last:pb-0 pl-1"
             >
-              <FadeInFromBottom className="h-[20px] w-[20px] border-[2px] border-gradient bg-[#1e1e1e] absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"></FadeInFromBottom>
+              <FadeInFromBottom once={false} className="h-[20px] w-[20px] border-[2px] border-gradient bg-[#1e1e1e] absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"></FadeInFromBottom>
 
               <div className=" text-2xl md:text-4xl font-extrabold">
                 {experience.jobTitle}
