@@ -5,7 +5,8 @@ import FadeIn from "../../utils/Animations/FadeIn";
 function Profile() {
   return (
     <>
-      <div className="flex flex-col items-center">
+
+      <section id="home" className="flex flex-col items-center">
         <div className="w-[100%] flex justify-center pb-10">
           <FadeIn delay={0.3}>
             <div className="w-25 h-25 rounded-full">
@@ -36,7 +37,7 @@ function Profile() {
             problem-solving and making things look good.
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 }

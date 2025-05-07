@@ -39,6 +39,7 @@
   -moz-osx-font-smoothing: grayscale;
     /* background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.99)), linear-gradient(to right, #ec4899, #3b82f6); */
     background-color: #1e1e1e;
+    scroll-behavior: smooth;
 
 }
 

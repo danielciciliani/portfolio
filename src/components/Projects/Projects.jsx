@@ -5,7 +5,7 @@ function Projects() {
   const projects = ProjectsData;
 
   return (
-    <div className="flex flex-col gap-10">
+    <section id="projects" className="flex flex-col gap-10">
       <h2 className="text-5xl font-extrabold">Projects</h2>
       {projects.map((project) => (
         <FadeInFromBottom
@@ -20,7 +20,7 @@ function Projects() {
             />
           </div>
           <div className="">
-            <h3 className="text-3xl pt-1">{project.name}</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold pt-1">{project.name}</h3>
             <div className="flex gap-1.5 pt-2 pb-5">
               {project.tech.map((techItem, index) => (
                 <div
@@ -39,7 +39,7 @@ function Projects() {
           </div>
         </FadeInFromBottom>
       ))}
-    </div>
+    </section>
   );
 }
 

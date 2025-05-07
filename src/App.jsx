@@ -12,6 +12,7 @@ import FadeIn from "./utils/Animations/FadeIn";
 import FadeInFromBottom from "./utils/Animations/FadeInFromBottom";
 import Contact from "./components/Contact/Contact";
 import { ContactLink, Links } from "./utils/LinksData";
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
   
   return (
     <>
-      <Scroll></Scroll>
+      <Scroll id={'#top'}></Scroll>
       <div className="font-lato w-screen h-full scroll-smooth">
+        <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-10 pb-10">
             <FadeIn duration={1.5}>
@@ -47,7 +49,7 @@ function App() {
                 <AboutMe></AboutMe>
               </Card>
             </FadeInFromBottom>
-            <FadeIn delay={1}>
+            <FadeIn delay={0.5} once={false}>
               <Card>
                 <Contact>
                   <CtaLink links={contactLink}></CtaLink> 
