@@ -1,16 +1,17 @@
-import { motion, delay } from "motion/react"
+import { motion, delay } from "motion/react";
 
 function Panda() {
   return (
     <>
       <div className="w-full flex flex-row justify-center">
-        <motion.div className="w-30 h-30 md:w-40 md:h-40"
-        initial={{ opacity: 0, scale: 0}}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.4,
-          scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},
-        }}
+        <motion.div
+          className="w-30 h-30 md:w-40 md:h-40"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
         >
           <img
             className="w-full h-full"
@@ -18,13 +19,14 @@ function Panda() {
             alt="red panda logo"
           />
         </motion.div>
-        <motion.div className="w-30 h-30 md:w-40 md:h-40"
-        initial={{ opacity: 0, scale: 0}}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.4,
-          scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},
-        }}
+        <motion.div
+          className="w-30 h-30 md:w-40 md:h-40"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
         >
           <img
             className="w-full h-full"
@@ -32,13 +34,14 @@ function Panda() {
             alt="red panda logo"
           />
         </motion.div>
-        <motion.div className="w-30 h-30 md:w-40 md:h-40"
-        initial={{ opacity: 0, scale: 0}}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.4,
-          scale: { type: "spring", visualDuration: 0.4, bounce: 0.5},
-        }}
+        <motion.div
+          className="w-30 h-30 md:w-40 md:h-40"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
         >
           <img
             className="w-full h-full"
