@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <>
         <div className="flex justify-center w-full">
-            <nav className="flex border-gradient w-11/12 mx-auto sm:w-9/12 lg:w-7/12 py-2 px-4 mt-10 rounded-4xl gap-5 justify-around items-center">
+            <nav className="flex border-gradient w-11/12 mx-auto sm:w-9/12 lg:w-7/12 py-2 px-4 mt-10 rounded-4xl gap-5 justify-around items-center fixed top-0 z-50">
                 {
                     options.map((option, i) => (
                         <div key={i} className="text-sm md:text-xl">
