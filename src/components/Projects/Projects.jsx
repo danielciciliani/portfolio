@@ -12,7 +12,7 @@ function Projects() {
           key={project.id}
           className="w-full h-auto flex flex-col lg:flex-row  gap-5 pb-10 last:pb-0"
         >
-          <div className="w-full lg:w-[70%]">
+          <div className="w-full lg:w-[70%] rounded-xl border-[.5] border-gradient">
             <img
               className="rounded-xl"
               src={project.image}
