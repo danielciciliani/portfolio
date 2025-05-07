@@ -4,9 +4,9 @@ function FadeInFromBottom({ children, className = "", delay = 0, duration = 1.5 
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, translateY: 200 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
-      viewport={{ once: true, amount: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
       onViewportEnter={(entry) => console.log(entry.isIntersecting)}
       transition={{
         duration,

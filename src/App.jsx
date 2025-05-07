@@ -17,7 +17,7 @@ function App() {
       <Scroll></Scroll>
       <div className="font-lato w-screen h-full">
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
-          <div className="flex flex-col gap-10 pt-10">
+          <div className="flex flex-col gap-10 pt-10 pb-10">
             <FadeIn duration={1.5}>
               <Card>
                 <Profile></Profile>
@@ -25,7 +25,7 @@ function App() {
             </FadeIn>
             <Panda></Panda>
             <CtaLink></CtaLink>
-            <FadeInFromBottom duration={1.5}>
+            <FadeInFromBottom duration={1.5} delay={1.5}>
               <Card>
                 <Experience></Experience>
               </Card>
@@ -35,11 +35,11 @@ function App() {
                 <Projects></Projects>
               </Card>
             </FadeInFromBottom>
-            <FadeIn duration={1.5}>
+            <FadeInFromBottom duration={1.5}>
               <Card>
                 <AboutMe></AboutMe>
               </Card>
-            </FadeIn>
+            </FadeInFromBottom>
           </div>
         </div>
       </div>
