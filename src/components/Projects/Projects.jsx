@@ -1,3 +1,4 @@
+import FadeInFromBottom from "../../utils/Animations/FadeInFromBottom";
 import { ProjectsData } from "../../utils/ProjectsData";
 
 function Projects() {
@@ -7,7 +8,7 @@ function Projects() {
     <div className="flex flex-col gap-10">
       <h2 className="text-5xl font-extrabold">Projects</h2>
       {projects.map((project) => (
-        <div
+        <FadeInFromBottom
           key={project.id}
           className="w-full h-auto flex flex-col lg:flex-row  gap-5 pb-10 last:pb-0"
         >
@@ -36,7 +37,7 @@ function Projects() {
               <div className="preview">{project.buttons.preview}</div>
             </div>
           </div>
-        </div>
+        </FadeInFromBottom>
       ))}
     </div>
   );

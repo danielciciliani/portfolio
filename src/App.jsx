@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Scroll></Scroll>
-      <div className="font-lato w-screen h-full">
+      <div className="font-lato w-screen h-full scroll-smooth">
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-10 pb-10">
             <FadeIn duration={1.5}>
