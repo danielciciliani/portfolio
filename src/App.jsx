@@ -25,7 +25,7 @@ function App() {
             </FadeIn>
             <Panda></Panda>
             <CtaLink></CtaLink>
-            <FadeInFromBottom duration={1.5} delay={1.5}>
+            <FadeInFromBottom duration={1.5}>
               <Card>
                 <Experience></Experience>
               </Card>
