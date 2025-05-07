@@ -5,7 +5,7 @@ import FadeIn from "../../utils/Animations/FadeIn";
 function Contact({children}){
     return (
         <>
-            <div className="flex flex-col cursor-pointer">
+            <div className="flex flex-col cursor-pointer w-full">
                 <h2 className="text-5xl font-extrabold">Do we talk?</h2>
                 <FadeIn delay={1.5} className="pt-5 flex self-end" >
                     {children}
