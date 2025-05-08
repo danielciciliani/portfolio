@@ -6,7 +6,7 @@ function Profile() {
   return (
     <>
 
-      <section id="home" className="flex flex-col items-center">
+      <section className="flex flex-col items-center">
         <div className="w-[100%] flex justify-center pb-10">
           <FadeIn delay={0.3}>
             <div className="w-25 h-25 rounded-full">

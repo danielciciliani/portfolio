@@ -22,8 +22,8 @@ function App() {
   
   return (
     <>
-      <Scroll id={'#top'}></Scroll>
-      <div className="font-lato w-screen h-full scroll-smooth">
+      <Scroll></Scroll>
+      <div id="home" className="font-lato w-screen h-full scroll-smooth">
         <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-30 pb-10">
@@ -49,13 +49,13 @@ function App() {
                 <AboutMe></AboutMe>
               </Card>
             </FadeInFromBottom>
-            <FadeInFromBottom once={false}>
+            <FadeIn once={false}>
               <Card>
                 <Contact>
                   <CtaLink links={contactLink}></CtaLink> 
                 </Contact>
               </Card>
-            </FadeInFromBottom>
+            </FadeIn>
           </div>
         </div>
       </div>
