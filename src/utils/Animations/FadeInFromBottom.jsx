@@ -7,7 +7,6 @@ function FadeInFromBottom({ children, className = "", delay = 0, duration = 1.5,
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once, amount: 0.1 }}
-      onViewportEnter={(entry) => console.log(entry.isIntersecting)}
       transition={{
         duration,
         delay,

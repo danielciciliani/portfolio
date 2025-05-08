@@ -49,13 +49,13 @@ function App() {
                 <AboutMe></AboutMe>
               </Card>
             </FadeInFromBottom>
-            <FadeIn delay={0.5} once={false}>
+            <FadeInFromBottom once={false}>
               <Card>
                 <Contact>
                   <CtaLink links={contactLink}></CtaLink> 
                 </Contact>
               </Card>
-            </FadeIn>
+            </FadeInFromBottom>
           </div>
         </div>
       </div>

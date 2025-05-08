@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import FadeInFromBottom from "../../utils/Animations/FadeInFromBottom";
 import { ProjectsData } from "../../utils/ProjectsData";
 
@@ -5,15 +6,16 @@ function Projects() {
   const projects = ProjectsData;
 
   return (
-    <section id="projects" className="flex flex-col gap-10">
+    <section id="projects" className="flex flex-col gap-10 scroll-mt-24">
       <h2 className="text-5xl font-extrabold">Projects</h2>
       {projects.map((project) => (
         <FadeInFromBottom
           key={project.id}
           className="w-full h-auto flex flex-col lg:flex-row  gap-5 pb-10 last:pb-0"
         >
-          <div className="w-full lg:w-[70%] rounded-xl border-[.5] border-gradient">
-            <img
+          <div className="w-full lg:w-[70%] rounded-xl border-[.5] border-gradient overflow-hidden">
+            <motion.img 
+              whileHover={{ scale: 1.2 }}
               className="rounded-xl"
               src={project.image}
               alt={project.name}

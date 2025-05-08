@@ -18,7 +18,16 @@ function Panda() {
           className="w-30 h-30 md:w-40 md:h-40"
           delay={0.5}
       >
-          <img 
+          <motion.img 
+          whileHover={{
+            scale: 1.05,
+          }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 15,
+          }}
             className="w-full h-full"
             src={image.url}
             alt="red panda logo"
