@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Scroll></Scroll>
-      <div id="home" className="font-lato w-screen h-full scroll-smooth">
+      <div className="font-lato w-screen h-full scroll-smooth">
         <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-30 pb-10">

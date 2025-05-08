@@ -1,7 +1,7 @@
 function AboutMe() {
   return (
     <>
-      <section id="about" className="flex flex-col gap-10">
+      <section id="about" className="flex flex-col gap-10 scroll-mt-32">
         <h2 className="text-5xl font-extrabold">About me</h2>
         <p>
           I'm Daniel Ciciliani and I started creating websites back in 2019,
