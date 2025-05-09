@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useDebugValue, useEffect, useState } from "react";
 import Card from "./components/Card/Card";
 import Profile from "./components/Profile/Profile";
 import CtaLink from "./components/CtaLink/CtaLink";
@@ -13,17 +13,26 @@ import FadeInFromBottom from "./utils/Animations/FadeInFromBottom";
 import Contact from "./components/Contact/Contact";
 import { ContactLink, Links } from "./utils/LinksData";
 import Navbar from "./components/Navbar/Navbar";
+import { PiWheelchairMotionBold } from "react-icons/pi";
 
 
 function App() {
   
   const links = Links;
   const contactLink = ContactLink;
+
+  useEffect(() => {
+    const isDark = localStorage.theme === 'dark' || 
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+    document.documentElement.classList.toggle("dark", isDark);
+  }, []);
+
   
   return (
     <>
       <Scroll></Scroll>
-      <div className="font-lato w-screen h-full scroll-smooth">
+      <div className="font-lato w-screen h-full scroll-smooth bg-blue-200 dark:bg-gray-800- dark:bg-black">
         <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-30 pb-10">
