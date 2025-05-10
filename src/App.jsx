@@ -44,11 +44,11 @@ function App() {
     <>
     <div>
       <Scroll></Scroll>
-      <div className="font-lato w-screen h-full scroll-smooth bg-blue-300 dark:bg-red-500 text-black dark:text-white ">
+      <div className="font-lato w-screen h-full scroll-smooth bg-gray-50 dark:bg-[#1a1a1a] text-[#1a1a1a] dark:text-white ">
         <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-30 pb-10">
-          <button onClick={toggleDark}>
+          <button onClick={toggleDark} className="bg-cyan-700 dark:bg-cyan-500">
           change mode
         </button>
             <FadeIn duration={1.5}>
