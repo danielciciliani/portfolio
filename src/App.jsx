@@ -1,4 +1,4 @@
-import { useDebugValue, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./components/Card/Card";
 import Profile from "./components/Profile/Profile";
 import CtaLink from "./components/CtaLink/CtaLink";
@@ -6,36 +6,51 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Panda from "./components/Panda/Panda";
-import "./index.css";
 import Scroll from "./utils/Animations/Scroll";
 import FadeIn from "./utils/Animations/FadeIn";
 import FadeInFromBottom from "./utils/Animations/FadeInFromBottom";
 import Contact from "./components/Contact/Contact";
 import { ContactLink, Links } from "./utils/LinksData";
 import Navbar from "./components/Navbar/Navbar";
-import { PiWheelchairMotionBold } from "react-icons/pi";
 
+import "./index.css";
 
 function App() {
   
   const links = Links;
   const contactLink = ContactLink;
 
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("dark mode") === "true";
+  });
+
+  const toggleDark = () => {
+    setDarkMode(prev => !prev);
+  };
+
   useEffect(() => {
-    const isDark = localStorage.theme === 'dark' || 
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
-
+    const htmlTag = document.documentElement; // 
   
+    if (darkMode) {
+      htmlTag.classList.add("dark");
+    } else {
+      htmlTag.classList.remove("dark");
+    }
+    localStorage.setItem("dark mode", darkMode);
+  }, [darkMode]);
+  
+
   return (
     <>
+    <div>
       <Scroll></Scroll>
-      <div className="font-lato w-screen h-full scroll-smooth bg-blue-200 dark:bg-gray-800- dark:bg-black">
+      <div className="font-lato w-screen h-full scroll-smooth bg-blue-300 dark:bg-red-500 text-black dark:text-white ">
         <Navbar></Navbar>
         <div className="w-11/12 mx-auto sm:w-9/12 lg:w-7/12">
           <div className="flex flex-col gap-10 pt-30 pb-10">
+          <button onClick={toggleDark}>
+          change mode
+        </button>
             <FadeIn duration={1.5}>
               <Card>
                 <Profile></Profile>
@@ -68,6 +83,7 @@ function App() {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }
