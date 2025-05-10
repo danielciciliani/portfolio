@@ -1,16 +1,6 @@
 import { motion, useScroll, useMotionValueEvent, useSpring } from "motion/react";
-
 import { FaHome, FaMoon, FaEnvelope } from "react-icons/fa";
 import { useEffect, useState } from "react";
-
-const options = [
-  { name: <FaHome size={20} />, link: "#home" },
-  { name: "Experience", link: "#experience" },
-  { name: "Projects", link: "#projects" },
-  { name: "About", link: "#about" },
-  { name: "Contact", link: "" },
-  { name: <FaMoon size={15} />, link: "" },
-];
 
 function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -25,6 +15,34 @@ function Navbar() {
         setHidden(false);
     }
   });
+
+   const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("dark mode") === "true";
+  });
+
+  const toggleDark = () => {
+    setDarkMode(prev => !prev);
+  };
+
+  const options = [
+    { name: <FaHome size={20} />, link: "#home" },
+    { name: "Experience", link: "#experience" },
+    { name: "Projects", link: "#projects" },
+    { name: "About", link: "#about" },
+    { name: "Contact", link: "" },
+    { name: <FaMoon size={15} onClick={toggleDark} /> }
+  ];
+
+  useEffect(() => {
+    const htmlTag = document.documentElement; // 
+  
+    if (darkMode) {
+      htmlTag.classList.add("dark");
+    } else {
+      htmlTag.classList.remove("dark");
+    }
+    localStorage.setItem("dark mode", darkMode);
+  }, [darkMode]);
 
   return (
     <motion.nav
@@ -42,12 +60,10 @@ function Navbar() {
         duration: 2, 
         type: "spring",
     }}
-    //   className={`w-11/12 mx-auto sm:w-9/12 lg:w-7/12 fixed top-10 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 py-2 px-4 rounded-4xl border-gradient-nav justify-around 
-    //   }`}
 
       className={`w-11/12 mx-auto sm:w-9/12 lg:w-7/12 fixed top-10 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 py-2 px-4 
         rounded-4xl border-gradient-nav--- justify-around
-        bg-black-500 backdrop-blur-2xl shadow-[0_0_20px_1px_rgba(255,255,255,0.1)]
+        bg-black-500 backdrop-blur-2xl shadow-[0_0_20px_1px_rgba(255,255,255,0.8) dark:shadow-[0_0_20px_1px_rgba(255,255,255,0.1)]
       `}
       
     >
@@ -67,7 +83,7 @@ function Navbar() {
             }}
             className="cursor-pointer text-base"
           >
-            <a href={option.link} className=" md:text-base text-sm md:text-normal">
+            <a href={option.link} className=" text-slate-700 dark:text-base text-sm md:text-normal">
               {option.name}
             </a>
           </motion.div>
