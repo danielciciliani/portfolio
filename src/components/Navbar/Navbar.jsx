@@ -1,5 +1,6 @@
 import { motion, useScroll, useMotionValueEvent, useSpring } from "motion/react";
-import { FaHome, FaMoon, FaEnvelope } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { IoMdMoon, IoMdSunny} from "react-icons/io";
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -30,10 +31,12 @@ function Navbar() {
     { name: "Projects", link: "#projects" },
     { name: "About", link: "#about" },
     { name: "Contact", link: "" },
-    { name: <FaMoon size={15} onClick={toggleDark} /> }
+    { name: darkMode ? <IoMdSunny size={20} onClick={toggleDark}></IoMdSunny> : <IoMdMoon size={20} onClick={toggleDark}></IoMdMoon>}
   ];
 
   useEffect(() => {
+    localStorage.setItem("dark mode", darkMode);
+
     const htmlTag = document.documentElement; // 
   
     if (darkMode) {
@@ -41,7 +44,6 @@ function Navbar() {
     } else {
       htmlTag.classList.remove("dark");
     }
-    localStorage.setItem("dark mode", darkMode);
   }, [darkMode]);
 
   return (
