@@ -1,9 +1,8 @@
 import { FaGithub, FaLinkedin, FaCloudDownloadAlt } from "react-icons/fa";
 import FadeIn from "../../utils/Animations/FadeIn";
-import {motion} from "motion/react";
+import { motion } from "motion/react";
 
 function CtaLink({ links }) {
-
   return (
     <>
       <FadeIn>
@@ -12,16 +11,16 @@ function CtaLink({ links }) {
             const Icon = e.icon;
             return (
               <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 15,
-              }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 15,
+                }}
                 key={e.id}
                 className="
                     text-sm md:text-xl border-1  border-blue-500 rounded-2xl 
