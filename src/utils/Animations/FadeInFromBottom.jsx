@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
 
-function FadeInFromBottom({ children, className = "", delay = 0, duration = 1.5, once=true}) {
+function FadeInFromBottom({
+  children,
+  className = "",
+  delay = 0,
+  duration = 1.5,
+  once = true,
+}) {
   return (
     <motion.div
       className={className}

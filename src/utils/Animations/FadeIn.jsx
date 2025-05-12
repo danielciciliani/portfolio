@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
 
-function FadeIn({ children, className = "", delay = 0, duration = 1.5, once=true}) {
+function FadeIn({
+  children,
+  className = "",
+  delay = 0,
+  duration = 1.5,
+  once = true,
+}) {
   return (
     <motion.div
       className={className}

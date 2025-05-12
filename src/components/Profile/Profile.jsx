@@ -5,7 +5,6 @@ import FadeIn from "../../utils/Animations/FadeIn";
 function Profile() {
   return (
     <>
-
       <section className="flex flex-col items-center">
         <div className="w-[100%] flex justify-center pb-10">
           <FadeIn delay={0.3}>

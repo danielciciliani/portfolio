@@ -14,7 +14,7 @@ function Projects() {
           className="w-full h-auto flex flex-col lg:flex-row  gap-5 pb-10 last:pb-0"
         >
           <div className="w-full lg:w-[70%] rounded-xl border-[.5] border-gradient overflow-hidden">
-            <motion.img 
+            <motion.img
               whileHover={{ scale: 1.2 }}
               className="rounded-xl"
               src={project.image}
@@ -22,7 +22,9 @@ function Projects() {
             />
           </div>
           <div className="">
-            <h3 className="text-2xl md:text-4xl font-extrabold pt-1">{project.name}</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold pt-1">
+              {project.name}
+            </h3>
             <div className="flex gap-1.5 pt-2 pb-5">
               {project.tech.map((techItem, index) => (
                 <div
