@@ -3,8 +3,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* @tailwind utilities; */
-
 @theme {
   --font-lato: "Lato", sans-serif;
   --color-base: rgba(255, 255, 255, 0.87);
@@ -27,7 +25,7 @@
     border: 1px solid transparent;
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgb(255, 255, 255)), linear-gradient(to right, #ec4899, #3b82f6);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255)), linear-gradient(to right, #ec4899, #3b82f6);
   }
   
   .dark .border-gradient {
@@ -41,6 +39,14 @@
     background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 1)), linear-gradient(to right, #ec4899, #3b82f6);
   }
 
+  .card-shadow {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .dark .card-shadow {
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.15);
+  }
+
 }
 
 :root {
@@ -50,25 +56,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;  
-
+  scroll-behavior: smooth; 
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  /* background-color: #1a1a1a; */
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
- /* scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); */
