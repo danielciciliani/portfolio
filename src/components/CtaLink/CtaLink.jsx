@@ -26,7 +26,7 @@ function CtaLink({ links }) {
                 className="
                     text-sm md:text-xl border-1  border-blue-500 rounded-2xl 
                     px-5 py-1 text-color-base min-w-[30%] md:min-w-[150px]
-                    hover:border-pink-500 hover:text-white cursor-pointer"
+                    hover:border-pink-500 cursor-pointer"
               >
                 <a
                   href={e.link}
