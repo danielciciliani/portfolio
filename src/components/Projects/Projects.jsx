@@ -6,7 +6,7 @@ function Projects() {
   const projects = ProjectsData;
 
   return (
-    <section id="projects" className="flex flex-col gap-10 scroll-mt-32">
+    <section id="projects" className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32">
       <h2 className="text-5xl font-extrabold">Projects</h2>
       {projects.map((project) => (
         <FadeInFromBottom

@@ -6,7 +6,7 @@ function Experience() {
 
   return (
     <>
-      <section id="experience" className="flex flex-col gap-10 scroll-mt-32">
+      <section id="experience" className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32">
         <h2 className="text-5xl font-extrabold ">Work experience</h2>
         <div className="h-full flex-col relative">
           <div className="h-[100%] w-[1px] border-[1px] border-pink-500 absolute  first:top-0 -left-[21px] -top-[30px] "></div>
