@@ -22,7 +22,10 @@ function Experience() {
                 {experience.jobTitle}
               </div>
               <div className="flex flex-col md:flex-row justify-between items-baseline text-2xl md:text-3xl font-light">
-                <div className="">{experience.company}</div>
+                <div className="flex flex-col items-baseline gap">
+                  <div className="">{experience.company}</div>
+                  <div className="italic text-lg sm:text-xl">{experience.sector}</div>
+                </div>
                 <div className="text-xl">{experience.from}</div>
               </div>
               <div>
