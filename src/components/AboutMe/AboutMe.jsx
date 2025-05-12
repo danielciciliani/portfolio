@@ -1,10 +1,13 @@
 function AboutMe() {
   return (
     <>
-      <section id="about" className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32">
+      <section
+        id="about"
+        className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32"
+      >
         <h2 className="text-5xl font-extrabold">About me</h2>
         <p>
-          I'm Daniel Ciciliani and I started creating websites back in 2019,
+          I'm Daniel Ciciliani,form Argentina and I started creating websites back in 2019,
           just out of curiosity. During the pandemic in 2020, I began selling my
           websites as a freelancer, and that's when I made my first bucks
           "having fun". I realized I could actually make a living just by
@@ -19,8 +22,8 @@ function AboutMe() {
           both frontend and backend for two years.
         </p>
         <p>
-          Recently, I have been building personal projects and sharpening my
-          skills to take the next step in my career. I am looking to join a
+          Recently, I've been building personal projects and co-founding a
+          Startup that it is on its early stages. Now I am looking to join a
           growth-oriented company, where vision and strategy are aligned with
           the product. A company where I can contribute not just with my
           technical skills but also through solid communication, collaboration,
