@@ -27,7 +27,7 @@ function Profile() {
           <p>
             I'm a frontend developer with{" "}
             <span className="font-bold">
-              +3 years of professional experience
+              +4 years of experience
             </span>
             , plus a couple years freelancing.
           </p>
