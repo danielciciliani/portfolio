@@ -119,8 +119,8 @@ export const ProjectsData = [
   {
     id: 4,
     name: "Personal Website",
-    tech: [tech.react, tech.tailwind, tech.motion, tech.motion, tech.vitest],
-    details: `Developed websites using visual builders, customizing base templates`,
+    tech: [tech.react, tech.tailwind, tech.motion, tech.vite, tech.vitest],
+    details: `Personal portfolio developed using the most modern technologies.`,
     buttons: [
       { icon: buttonIcons.code, name: "Code", link: "https://github.com/danielciciliani/portfolio" },
     ],
