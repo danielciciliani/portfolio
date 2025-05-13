@@ -80,7 +80,7 @@ function Navbar() {
         type: "spring",
       }}
       className={`w-11/12 mx-auto sm:w-9/12 lg:w-7/12 fixed top-10 left-1/2 
-        -translate-x-1/2 z-50 flex items-center gap-4 py-2 px-4 
+        -translate-x-1/2 z-50 flex items-center py-2 px-4 
         rounded-4xl backdrop-blur-2xl card-shadow`}
     >
       {options.map((option, i) => {
