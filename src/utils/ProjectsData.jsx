@@ -95,7 +95,7 @@ export const ProjectsData = [
       },
       { icon: buttonIcons.preview, name: "Preview", link: "https://zara-mbst-dc.vercel.app" },
     ],
-    image: "projects/mbst_1.webp",
+    image: "projects/mbst.webp",
     visible: true,
   },
   {
@@ -104,7 +104,7 @@ export const ProjectsData = [
     tech: [tech.javascript, tech.motion],
     details: `Corportate website for cinema production company`,
     buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://www.yoromedia.com" }],
-    image: "projects/yoro_1.webp",
+    image: "projects/yoro.webp",
     visible: true,
   },
   {
@@ -113,7 +113,7 @@ export const ProjectsData = [
     tech: [tech.react, tech.javascript, tech.sass, tech.php, tech.docker],
     details: `E-commerce with more than 60k products, and 10k clients.`,
     buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://ixia.es/" }],
-    image: "projects/ix_1.webp",
+    image: "projects/ix.webp",
     visible: true,
   },
   {
@@ -133,7 +133,7 @@ export const ProjectsData = [
     tech: [tech.javascript, tech.html, tech.sass, tech.php],
     details: `Corporate website with integrated appointment scheduling`,
     buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://pleasecomein.co.uk" }],
-    image: "projects/pci_1.webp",
+    image: "projects/pci.webp",
     visible: true,
   },
 ];
