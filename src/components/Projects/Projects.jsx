@@ -23,7 +23,7 @@ function Projects() {
                 stiffness: 300,
                 damping: 15,
               }}
-              className="rounded-xl w-full contain-content border-gradient"
+              className="rounded-xl w-full contain-content border-1 border-gray-300  dark:border-slate-700"
               src={project.image}
               alt={project.name}
             />
