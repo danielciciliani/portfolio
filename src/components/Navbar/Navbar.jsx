@@ -91,19 +91,21 @@ function Navbar() {
               stiffness: 300,
               damping: 20,
             }}
-            whileHover={{
-              style: {
-                color: "#FF0000",
-              },
-            }}
             className="cursor-pointer"
           >
-            <a
+            <motion.a
               href={option.link}
-              className=" text-slate-700 dark:text-base text-sm"
+              className="text-slate-600 dark:text-slate-200 text-sm hover:text-indigo-500 transition-all 0.8 ease"
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                duration: 1.1,
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
             >
               {option.name}
-            </a>
+            </motion.a>
           </motion.div>
         );
       })}

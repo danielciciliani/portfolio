@@ -29,7 +29,7 @@ function Experience() {
               <div className="flex flex-col md:flex-row justify-between items-baseline text-2xl md:text-3xl font-light">
                 <div className="flex flex-col items-baseline gap">
                   <div className="">{experience.company}</div>
-                  <div className="italic text-lg sm:text-xl">
+                  <div className="italic- text-gray-600 dark:text-gray-300 text-lg sm:text-xl">
                     {experience.sector}
                   </div>
                 </div>

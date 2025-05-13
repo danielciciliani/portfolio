@@ -49,8 +49,8 @@ function Projects() {
               {project.buttons.map((button, index) => (
                 <motion.div key={index} 
                 className="
-                border-1 py-1 px-5 rounded-2xl text-sm sm:text-md 2xl:text-xl border-blue-500
-                text-color-base min-w-[30%] md:min-w-[100px] hover:border-pink-500
+                border-1 py-1 px-5 rounded-2xl text-sm sm:text-base 2xl:text-base border-blue-500
+                min-w-[30%] md:min-w-[100px] hover:border-pink-500
                 cursor-pointer
                 
                 "

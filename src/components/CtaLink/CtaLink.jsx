@@ -22,8 +22,8 @@ function CtaLink({ links }) {
                 }}
                 key={e.id}
                 className="
-                    text-sm md:text-lg border-1  border-blue-500 rounded-2xl 
-                    px-5 py-1 text-color-base min-w-[30%] md:min-w-[150px]
+                    text-sm md:text-base border-1  border-blue-500 rounded-2xl 
+                    px-5 py-1 min-w-[30%] md:min-w-[150px]
                     hover:border-pink-500 cursor-pointer"
               >
                 <a
