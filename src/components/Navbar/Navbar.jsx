@@ -24,8 +24,13 @@ function Navbar() {
   });
 
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("dark mode") === "true";
+    const stored = localStorage.getItem("dark mode");
+  
+    if (stored !== null) return stored === "true";
+    
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
+  
 
   const toggleDark = () => {
     setDarkMode((prev) => !prev);
@@ -47,15 +52,15 @@ function Navbar() {
   ];
 
   useEffect(() => {
-    localStorage.setItem("dark mode", darkMode);
-
     const htmlTag = document.documentElement; //
-
+    
     if (darkMode) {
       htmlTag.classList.add("dark");
     } else {
       htmlTag.classList.remove("dark");
     }
+    
+    localStorage.setItem("dark mode", darkMode);
   }, [darkMode]);
 
   return (
