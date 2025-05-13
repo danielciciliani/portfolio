@@ -17,7 +17,7 @@ function Projects() {
           key={project.id}
           className="w-full h-auto flex flex-col lg:flex-row  gap-5 pb-10 last:pb-0"
         >
-          <div className="w-full xl:w-6/12 2xl:w-6/12 rounded-xl border-[.5] overflow-hidden">
+          <div className="w-full xl:w-6/12 2xl:w-6/12 rounded-xl overflow-hidden">
             <img
               transition={{
                 stiffness: 300,
