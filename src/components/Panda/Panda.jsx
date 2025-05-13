@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import FadeIn from "../../utils/Animations/FadeIn";
 
 const PandaImages = [
-  { id: 1, url: "/panda_transparent_logo_l.png" },
-  { id: 2, url: "/panda_transparent_logo.png" },
-  { id: 3, url: "/panda_transparent_logo_r.png" },
+  { id: 1, url: "/panda_transparent_logo_l.webp" },
+  { id: 2, url: "/panda_transparent_logo.webp" },
+  { id: 3, url: "/panda_transparent_logo_r.webp" },
 ];
 
 const spring = { damping: 10, stiffness: 120 };

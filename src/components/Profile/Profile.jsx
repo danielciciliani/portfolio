@@ -11,7 +11,7 @@ function Profile() {
             <div className="w-25 h-25 rounded-full">
               <img
                 className="rounded-full h-[100%] w-[100%] object-cover object-top"
-                src="/profile_picture_opt.png"
+                src="/profile_picture.webp"
                 alt="Profile picture"
               />
             </div>
@@ -26,10 +26,8 @@ function Profile() {
         <div className=" w-10/12 flex flex-col pt-5 text-[1.3rem]/[2rem] text-center gap-3">
           <p>
             I'm a frontend developer with{" "}
-            <span className="font-bold">
-              +4 years of experience
-            </span>
-            , plus a couple years freelancing.
+            <span className="font-bold">+4 years of experience</span>, plus a
+            couple years freelancing.
           </p>
           <p>
             I'm lucky that coding brings together the most I like: tech, logic,
