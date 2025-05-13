@@ -31,9 +31,6 @@ function Navbar() {
     setDarkMode((prev) => !prev);
   };
 
-  const contact = ContactLink;
-  console.log(contact);
-
   const options = [
     { name: <FaHome size={20} />, link: "#home" },
     { name: "Experience", link: "#experience" },
@@ -103,7 +100,7 @@ function Navbar() {
           >
             <a
               href={option.link}
-              className=" text-slate-700 dark:text-base text-sm md:text-normal"
+              className=" text-slate-700 dark:text-base text-sm"
             >
               {option.name}
             </a>
