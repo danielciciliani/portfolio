@@ -26,7 +26,7 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255)),
+      linear-gradient(rgba(255, 255, 255, 0.95), rgb(255, 255, 255)),
       linear-gradient(to right, #ec4899, #3b82f6);
   }
 
