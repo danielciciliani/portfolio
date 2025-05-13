@@ -33,10 +33,10 @@ function Projects() {
             <h3 className="text-2xl md:text-4xl font-extrabold pt-1">
               {project.name}
             </h3>
-            <div className="flex flex-wrap gap-1.5 pt-2 pb-5 text-white">
+            <div className="flex flex-wrap gap-1.5 pt-2 pb-5">
               {project.tech?.map((item, index) => (
                 <div
-                  className="flex items-center gap-1 text-sm border-1 border-blue-500/90 dark:border-slate-700 rounded-2xl px-3 min-w-4 py-1 text-center bg-blue-900/60 dark:bg-blue-500/10"
+                  className="flex items-center gap-1 text-sm border-1 dark:border-slate-700 rounded-2xl px-3 min-w-4 py-1 text-center bg-blue-900/60 dark:bg-blue-500/10 bg-gray-100 text-gray-800 dark:text-white border-gray-300 transition-colors"
                   key={index}
                 >
                   {item.icon}
@@ -50,7 +50,7 @@ function Projects() {
                 <motion.div key={index} 
                 className="
                 border-1 py-1 px-5 rounded-2xl text-sm sm:text-md 2xl:text-xl border-blue-500
-                text-color-base md:min-w-[100px] hover:border-pink-500
+                text-color-base min-w-[30%] md:min-w-[100px] hover:border-pink-500
                 cursor-pointer
                 
                 "
