@@ -3,7 +3,7 @@ export const ExperienceData = [
     id: 1,
     jobTitle: "Co-Founder & Frontend Developer",
     company: "Firebus Tech Labs",
-    sector: "AI Startup",
+    sector: "AI Startup - Spain",
     from: "09/2024 - Present",
     details: [
       <>
@@ -16,7 +16,7 @@ export const ExperienceData = [
     jobTitle: "Frontend Developer",
     id: 2,
     company: "Grupo Juinsa",
-    sector: "E-commerce +60k products",
+    sector: "E-commerce +60k products - Spain",
     from: "07/2022 - 07/2024",
     details: [
       <>
@@ -42,7 +42,7 @@ export const ExperienceData = [
     id: 3,
     jobTitle: "Frontend Developer",
     company: "Modern Talking",
-    sector: "Advertising",
+    sector: "Advertising - Spain",
     from: "01/2022 - 06/2022",
     details: [
       <>
@@ -59,7 +59,7 @@ export const ExperienceData = [
     id: 4,
     jobTitle: "Frontend Developer",
     company: "Van Agency",
-    sector: "Advertising",
+    sector: "Advertising - Spain",
     from: "09/2021 - 12/2021",
     details: [
       <>
@@ -71,7 +71,7 @@ export const ExperienceData = [
     id: 5,
     jobTitle: "Frontend Developer",
     company: "Flavia Arias",
-    sector: "Software",
+    sector: "Software - Argentina",
     from: "07/2020 - 08/2021",
     details: [
       <>
