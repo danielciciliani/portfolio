@@ -20,7 +20,7 @@ function Experience() {
             >
               <FadeInFromBottom
                 once={false}
-                className="h-[20px] w-[20px] border-[2px] border-gradient bg-[#1e1e1e] absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"
+                className="h-[20px] w-[20px] border-[2px] border-gradient_ball absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"
               >
               </FadeInFromBottom>
 
