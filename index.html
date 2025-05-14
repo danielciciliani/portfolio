@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function () {
+        try {
+          const prefersDark = localStorage.getItem("dark mode");
+          const shouldUseDark = prefersDark === null ? true : prefersDark === "true";
+          if (shouldUseDark) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (_) {}
+      })();
+    </script>
+    
+    <style>
+      html.dark body {
+        background-color: #0a0a0a;
+        color: white;
+      }
+    </style>
+    
+    
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon_panda.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

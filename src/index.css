@@ -68,6 +68,19 @@
   }
 }
 
+
+
+html, body {
+  @apply bg-gray-100  text-[#1a1a1a] transition-colors duration-500;
+}
+
+html.dark body {
+  @apply dark:bg-[#1a1a1a] dark:text-white;
+}
+
+
+
+
 :root {
   line-height: 1.5;
   font-weight: 400;
