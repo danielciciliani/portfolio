@@ -100,6 +100,17 @@ export const ProjectsData = [
   },
   {
     id: 2,
+    name: "Personal Website",
+    tech: [tech.react, tech.tailwind, tech.motion, tech.vite, tech.vitest],
+    details: `Personal portfolio developed using the most modern technologies.`,
+    buttons: [
+      { icon: buttonIcons.code, name: "Code", link: "https://github.com/danielciciliani/portfolio" },
+    ],
+    image: "projects/dcp_dark.webp",
+    visible: true,
+  },
+  {
+    id: 3,
     name: "Cinema Production",
     tech: [tech.javascript, tech.motion],
     details: `Corportate website for cinema production company`,
@@ -108,23 +119,12 @@ export const ProjectsData = [
     visible: true,
   },
   {
-    id: 3,
+    id: 4,
     name: "B2B E-commerce",
     tech: [tech.react, tech.javascript, tech.sass, tech.php, tech.docker],
     details: `E-commerce with more than 60k products, and 10k clients.`,
     buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://ixia.es/" }],
     image: "projects/ix.webp",
-    visible: true,
-  },
-  {
-    id: 4,
-    name: "Personal Website",
-    tech: [tech.react, tech.tailwind, tech.motion, tech.vite, tech.vitest],
-    details: `Personal portfolio developed using the most modern technologies.`,
-    buttons: [
-      { icon: buttonIcons.code, name: "Code", link: "https://github.com/danielciciliani/portfolio" },
-    ],
-    image: "projects/dcp_dark.webp",
     visible: true,
   },
   {
