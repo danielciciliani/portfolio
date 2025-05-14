@@ -75,7 +75,7 @@ html, body {
 }
 
 html.dark body {
-  @apply dark:bg-[#1a1a1a] dark:text-white;
+  @apply dark:bg-[#1a1a1a] dark:text-white transition-colors duration-500;
 }
 
 
