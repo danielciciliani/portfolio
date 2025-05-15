@@ -46,11 +46,11 @@ export const ExperienceData = [
     from: "01/2022 - 06/2022",
     details: [
       <>
-        Developed custom websites from scratch for end-clients, implementing
+        Developed custom websites from scratch for end clients, implementing
         designs provided in Figma by the Design Team.
       </>,
       <>
-        Designed wireframes based on client needs, proposing functional and
+        Designed wireframes based on the client needs, proposing functional and
         modern alternatives to deliver to the UI team.
       </>,
     ],
@@ -58,7 +58,7 @@ export const ExperienceData = [
   {
     id: 4,
     jobTitle: "Frontend Developer",
-    company: "Van Agency",
+    company: "Vancondieresis",
     sector: "Advertising - Spain",
     from: "09/2021 - 12/2021",
     details: [

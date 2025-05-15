@@ -11,7 +11,7 @@ function Contact({ children }) {
         <p className="pt-10 pb-5">
           If you think we can build something together,
           <span className="font-bold">
-            <a href={mailTo}> let's talk about it!</a>
+            <a href={mailTo}> let's get in touch!</a>
           </span>
         </p>
         <div className="pt-5 flex self-end">{children}</div>

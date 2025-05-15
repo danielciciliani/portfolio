@@ -19,7 +19,7 @@ function Profile() {
         </div>
         <FadeIn delay={0.4}>
           <h1 className="font-extrabold text-center">
-            Hey, I'm{" "}
+            Hi, I'm{" "}
             <span className="main-gradient pt-10">Daniel Ciciliani</span>
           </h1>
         </FadeIn>
@@ -30,7 +30,7 @@ function Profile() {
             couple years freelancing.
           </p>
           <p>
-            I'm lucky that coding brings together the most I like: tech, logic,
+            I'm lucky that coding brings together what I like the most: tech, logic,
             problem-solving and making things look good.
           </p>
         </div>

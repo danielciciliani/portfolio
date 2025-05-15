@@ -28,7 +28,7 @@ export const Links = [
 ];
 
 export const mailTo =
-  "mailto:danielciciliani.dev@gmail.com?&subject=I've just saw you website&body=Hey Dani!";
+  "mailto:danielciciliani.dev@gmail.com?&subject=I've just seen your website&body=Hey Dani!";
 
 export const ContactLink = [
   { id: 1, link: mailTo, text: "Contact", icon: FaEnvelope },

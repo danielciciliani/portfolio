@@ -8,7 +8,7 @@ function AboutMe() {
         <h2 className="text-5xl font-extrabold">About me</h2>
         <p>
         I'm Daniel Ciciliani, a frontend developer <span className="font-bold">from Argentina, based in Spain.</span> I started
-        coding back in 2019 out of curiosity, <span className="font-bold">and by 2020 I was freelancing and I've landed
+        coding back in 2019 out of curiosity, <span className="font-bold">and by 2020 I was freelancing and I landed
         my first job.</span>
         </p>
         <p>
@@ -16,7 +16,7 @@ function AboutMe() {
         its early stages. 
         </p>
         <p>
-        I've done some things in backend — PHP, MySQL, Docker, Linux — but I always choose frontend.
+        Although I've done some work in backend — PHP, MySQL, Docker, Linux — I always go for frontend.
         Maybe it's the <span className="italic">Apple fan</span> in me, but 
         <span className="font-bold"> I believe good UI and UX
         are game-changers</span>. 
