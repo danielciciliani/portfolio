@@ -6,6 +6,7 @@ import { mailTo } from "../../utils/LinksData";
 function Contact({ children }) {
   return (
     <>
+    <section id="contact" >
       <div className="flex flex-col cursor-pointer w-full">
         <h2 className="text-5xl font-extrabold">Let's talk!</h2>
         <p className="pt-10 pb-5">
@@ -16,6 +17,7 @@ function Contact({ children }) {
         </p>
         <div className="pt-5 flex self-end">{children}</div>
       </div>
+    </section>
     </>
   );
 }

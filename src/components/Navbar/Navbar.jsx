@@ -40,7 +40,7 @@ function Navbar() {
     { name: "Experience", link: "#experience" },
     { name: "Projects", link: "#projects" },
     { name: "About", link: "#about" },
-    { name: "Contact", link: mailTo },
+    { name: "Contact", link: "#contact" },
     {
       name: darkMode ? (
         <IoMdSunny size={20} onClick={toggleDark}></IoMdSunny>
