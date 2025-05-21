@@ -1,14 +1,14 @@
 export const ExperienceData = [
   {
     id: 1,
-    jobTitle: "Co-Founder & Frontend Developer",
+    jobTitle: "Frontend Developer",
     company: "Firebus Tech Labs",
     sector: "AI Startup - Spain",
     from: "09/2024 - Present",
     details: [
       <>
-        In the process of building a Startup, to provide AI powered solutions
-        for small companies and entrepreneurs.
+        Developing a product, to provide AI powered solutions
+        for small companies and entrepreneurs. Using React, and the most modern frontend technologies.
       </>,
     ],
   },
