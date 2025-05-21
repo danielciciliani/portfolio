@@ -1,14 +1,13 @@
 export const ExperienceData = [
   {
     id: 1,
-    jobTitle: "Frontend Developer",
+    jobTitle: "AI Projects Frontend Developer (Contract)",
     company: "Firebus Tech Labs",
     sector: "AI Startup - Spain",
     from: "09/2024 - Present",
     details: [
       <>
-        Developing a product, to provide AI powered solutions
-        for small companies and entrepreneurs. Using React, and the most modern frontend technologies.
+        Developing a product in a Startup environment, aimed at providing AI-powered solutions for B2B and B2C projects.
       </>,
     ],
   },
