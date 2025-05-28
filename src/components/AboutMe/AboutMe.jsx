@@ -12,7 +12,7 @@ function AboutMe() {
         my first job.</span>
         </p>
         <p>
-        Since then, I've worked across different industries like advertising and retail, and recently, I've co-founded an AI-powered startup that's still on 
+        Since then, I've worked across different industries like advertising and retail, and recently, I've been collaborating with an AI-powered startup that's still on 
         its early stages. 
         </p>
         <p>
