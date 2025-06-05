@@ -118,8 +118,23 @@ export const ProjectsData = [
     image: "projects/yoro.webp",
     visible: true,
   },
-  {
+    {
     id: 4,
+    name: "Weather App",
+    tech: [tech.react, tech.tailwind, tech.motion, tech.vite],
+    details: `Multi language Single Page Application (SPA) MVP, made following the requirements of a challenge.`,
+    buttons: [{
+        icon: buttonIcons.code,
+        name: "Code",
+        link: "https://github.com/danielciciliani/weatherAppIsEazy",
+      },
+      { icon: buttonIcons.preview, name: "Preview", link: "https://weather-app-dc.vercel.app/" }
+    ],
+    image: "projects/wa.webp",
+    visible: true,
+  },
+  {
+    id: 5,
     name: "B2B E-commerce",
     tech: [tech.react, tech.javascript, tech.sass, tech.php, tech.docker],
     details: `E-commerce with more than 60k products, and 10k clients.`,
@@ -128,7 +143,7 @@ export const ProjectsData = [
     visible: true,
   },
   {
-    id: 5,
+    id: 6,
     name: "Coaching",
     tech: [tech.javascript, tech.html, tech.sass, tech.php],
     details: `Corporate website with integrated appointment scheduling.`,
