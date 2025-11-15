@@ -1,13 +1,7 @@
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-  useSpring,
-} from "motion/react";
+import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import { FaHome } from "react-icons/fa";
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { useEffect, useState } from "react";
-import { ContactLink, mailTo } from "../../utils/LinksData";
 
 function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -25,11 +19,9 @@ function Navbar() {
 
   const [darkMode, setDarkMode] = useState(() => {
     const stored = localStorage.getItem("dark mode");
-  
+
     return stored !== null ? stored === "true" : true;
-    
   });
-  
 
   const toggleDark = () => {
     setDarkMode((prev) => !prev);
@@ -52,13 +44,13 @@ function Navbar() {
 
   useEffect(() => {
     const htmlTag = document.documentElement; //
-    
+
     if (darkMode) {
       htmlTag.classList.add("dark");
     } else {
       htmlTag.classList.remove("dark");
     }
-    
+
     localStorage.setItem("dark mode", darkMode);
   }, [darkMode]);
 

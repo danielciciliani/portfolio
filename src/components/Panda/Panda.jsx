@@ -1,4 +1,4 @@
-import { motion, useSpring, frame } from "motion/react";
+import { motion, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
 import FadeIn from "../../utils/Animations/FadeIn";
 
@@ -38,7 +38,7 @@ function useMagneticMotion(ref, maxOffset = 20) {
 
     window.addEventListener("pointermove", handlePointerMove);
     return () => window.removeEventListener("pointermove", handlePointerMove);
-  }, []);
+  }, [maxOffset, ref, x, y]);
 
   return { x, y };
 }

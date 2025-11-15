@@ -7,7 +7,8 @@ export const ExperienceData = [
     from: "09/2024 - Present",
     details: [
       <>
-        Developing a product in a Startup environment, aimed at providing AI-powered solutions for B2B and B2C projects.
+        Developing a product in a Startup environment, aimed at providing
+        AI-powered solutions for B2B and B2C projects.
       </>,
     ],
   },

@@ -12,18 +12,14 @@ import {
   Motion,
   Vite,
   Vitest,
-} from "./TechIcons"
+} from "./TechIcons";
 
-import {
-  FaGithub,
-  FaExternalLinkSquareAlt
-} from "react-icons/fa";
-
+import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const buttonIcons = {
   code: <FaGithub size={20}></FaGithub>,
-  preview: <FaExternalLinkSquareAlt size={20}></FaExternalLinkSquareAlt>
-}
+  preview: <FaExternalLinkSquareAlt size={20}></FaExternalLinkSquareAlt>,
+};
 
 const tech = {
   react: {
@@ -81,7 +77,6 @@ const tech = {
 };
 
 export const ProjectsData = [
-
   {
     id: 1,
     name: "MBST Mobile Store",
@@ -93,7 +88,11 @@ export const ProjectsData = [
         name: "Code",
         link: "https://github.com/danielciciliani/zara-challenge-dc",
       },
-      { icon: buttonIcons.preview, name: "Preview", link: "https://zara-mbst-dc.vercel.app" },
+      {
+        icon: buttonIcons.preview,
+        name: "Preview",
+        link: "https://zara-mbst-dc.vercel.app",
+      },
     ],
     image: "projects/mbst.webp",
     visible: true,
@@ -104,7 +103,11 @@ export const ProjectsData = [
     tech: [tech.react, tech.tailwind, tech.motion, tech.vite, tech.vitest],
     details: `Personal portfolio developed using the most modern technologies.`,
     buttons: [
-      { icon: buttonIcons.code, name: "Code", link: "https://github.com/danielciciliani/portfolio" },
+      {
+        icon: buttonIcons.code,
+        name: "Code",
+        link: "https://github.com/danielciciliani/portfolio",
+      },
     ],
     image: "projects/dcp_dark.webp",
     visible: true,
@@ -114,21 +117,32 @@ export const ProjectsData = [
     name: "Cinema Production",
     tech: [tech.javascript, tech.motion],
     details: `Corporate website for a cinema production company.`,
-    buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://www.yoromedia.com" }],
+    buttons: [
+      {
+        icon: buttonIcons.preview,
+        name: "Preview",
+        link: "https://www.yoromedia.com",
+      },
+    ],
     image: "projects/yoro.webp",
     visible: true,
   },
-    {
+  {
     id: 4,
     name: "Weather App",
     tech: [tech.react, tech.tailwind, tech.motion, tech.vite],
     details: `Multi language Single Page Application (SPA) MVP, made following the requirements of a challenge.`,
-    buttons: [{
+    buttons: [
+      {
         icon: buttonIcons.code,
         name: "Code",
         link: "https://github.com/danielciciliani/weatherAppIsEazy",
       },
-      { icon: buttonIcons.preview, name: "Preview", link: "https://weather-app-dc.vercel.app/" }
+      {
+        icon: buttonIcons.preview,
+        name: "Preview",
+        link: "https://weather-app-dc.vercel.app/",
+      },
     ],
     image: "projects/wa.webp",
     visible: true,
@@ -138,7 +152,9 @@ export const ProjectsData = [
     name: "B2B E-commerce",
     tech: [tech.react, tech.javascript, tech.sass, tech.php, tech.docker],
     details: `E-commerce with more than 60k products, and 10k clients.`,
-    buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://ixia.es/" }],
+    buttons: [
+      { icon: buttonIcons.preview, name: "Preview", link: "https://ixia.es/" },
+    ],
     image: "projects/ix.webp",
     visible: true,
   },
@@ -147,7 +163,13 @@ export const ProjectsData = [
     name: "Coaching",
     tech: [tech.javascript, tech.html, tech.sass, tech.php],
     details: `Corporate website with integrated appointment scheduling.`,
-    buttons: [{ icon: buttonIcons.preview, name: "Preview", link: "https://pleasecomein.co.uk" }],
+    buttons: [
+      {
+        icon: buttonIcons.preview,
+        name: "Preview",
+        link: "https://pleasecomein.co.uk",
+      },
+    ],
     image: "projects/pci.webp",
     visible: true,
   },

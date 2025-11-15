@@ -21,8 +21,7 @@ function Experience() {
               <FadeInFromBottom
                 once={false}
                 className="h-[20px] w-[20px] border-[2px] border-gradient_ball absolute top-1.5 md:top-2.5 -left-[30px] rounded-full"
-              >
-              </FadeInFromBottom>
+              ></FadeInFromBottom>
 
               <div className=" text-2xl md:text-4xl font-extrabold">
                 {experience.jobTitle}

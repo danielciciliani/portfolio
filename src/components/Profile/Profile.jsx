@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import "../../index.css";
 import FadeIn from "../../utils/Animations/FadeIn";
 
@@ -30,8 +29,8 @@ function Profile() {
             couple years freelancing.
           </p>
           <p>
-            I'm lucky that coding brings together what I like the most: tech, logic,
-            problem-solving and making things look good.
+            I'm lucky that coding brings together what I like the most: tech,
+            logic, problem-solving and making things look good.
           </p>
         </div>
       </section>

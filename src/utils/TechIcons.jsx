@@ -1,7 +1,6 @@
 import * as React from "react";
 
 export const ReactLogo = (props) => (
-
   <svg
     width="1em"
     height="1em"
@@ -264,5 +263,3 @@ export const Motion = (props) => (
     />
   </svg>
 );
-
-

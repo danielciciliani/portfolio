@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Card from "./components/Card/Card";
 import Profile from "./components/Profile/Profile";
 import CtaLink from "./components/CtaLink/CtaLink";

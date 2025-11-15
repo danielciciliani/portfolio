@@ -20,7 +20,7 @@ export const Links = [
   },
   {
     id: 3,
-    link: "./CV_DanielCiciliani_FontendDeveloper2025-EN.pdf",
+    link: "./CV_DanielCiciliani_FontendDeveloper2025-EN_np.pdf",
     text: "CV",
     icon: FaCloudDownloadAlt,
     download: "CvDanielCiciliani",
