@@ -43,33 +43,36 @@ function useMagneticMotion(ref, maxOffset = 20) {
   return { x, y };
 }
 
+function PandaImage({ image }) {
+  const ref = useRef(null);
+  const { x, y } = useMagneticMotion(ref, 15);
+
+  return (
+    <FadeIn delay={0.5} key={image.id}>
+      <motion.img
+        ref={ref}
+        src={image.url}
+        alt="panda logo"
+        className="w-28 h-28 md:w-40 md:h-40 object-contain"
+        style={{ x, y }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        }}
+      />
+    </FadeIn>
+  );
+}
+
 export default function Panda() {
   return (
     <div className="w-full flex flex-row justify-center gap-5 relative">
-      {PandaImages.map((image, i) => {
-        const ref = useRef(null);
-        const { x, y } = useMagneticMotion(ref, 15);
-
-        return (
-          <FadeIn delay={0.5} key={i}>
-            <motion.img
-              key={i}
-              ref={ref}
-              src={image.url}
-              alt="panda logo"
-              className="w-28 h-28 md:w-40 md:h-40 object-contain"
-              style={{ x, y }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-              }}
-            />
-          </FadeIn>
-        );
-      })}
+      {PandaImages.map((image) => (
+        <PandaImage key={image.id} image={image} />
+      ))}
     </div>
   );
 }
