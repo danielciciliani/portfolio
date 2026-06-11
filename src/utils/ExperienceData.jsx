@@ -13,8 +13,8 @@ export const ExperienceData = [
     ],
   },
   {
-    jobTitle: "Frontend Developer",
     id: 2,
+    jobTitle: "Frontend Developer",
     company: "Grupo Juinsa",
     sector: "E-commerce +60k products - Spain",
     from: "07/2022 - 07/2024",
