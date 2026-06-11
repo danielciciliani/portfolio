@@ -8,7 +8,7 @@ function Experience() {
     <>
       <section
         id="experience"
-        className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32"
+        className="flex flex-col gap-10 scroll-mt-36 sd:scroll-mt-32 w-full"
       >
         <h2 className="text-5xl font-extrabold ">Work experience</h2>
         <div className="h-full flex-col relative">

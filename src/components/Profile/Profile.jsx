@@ -4,7 +4,7 @@ import FadeIn from "../../utils/Animations/FadeIn";
 function Profile() {
   return (
     <>
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col items-center w-full">
         <div className="w-[100%] flex justify-center pb-10">
           <FadeIn delay={0.3}>
             <div className="w-25 h-25 rounded-full">
@@ -25,7 +25,7 @@ function Profile() {
         <div className=" w-10/12 flex flex-col pt-5 text-[1.3rem]/[2rem] text-center gap-3">
           <p>
             I'm a frontend developer with{" "}
-            <span className="font-bold">+4 years of experience</span>, plus a
+            <span className="font-bold">+5 years of experience</span>, plus a
             couple years freelancing.
           </p>
           <p>
