@@ -8,8 +8,8 @@ function AboutMe() {
         <h2 className="text-5xl font-extrabold">About me</h2>
         <p>
           I'm Daniel Ciciliani, a frontend developer with{" "}
-          <span className="font-bold">+5 years of experience.</span> I
-          started coding back in 2019 out of curiosity,{" "}
+          <span className="font-bold">+5 years of experience.</span> I started
+          coding back in 2019 out of curiosity,{" "}
           <span className="font-bold">
             and by 2020 I was freelancing and I landed my first job.
           </span>
