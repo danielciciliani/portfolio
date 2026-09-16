@@ -22,7 +22,7 @@ function App() {
     <>
       <div>
         <Scroll></Scroll>
-        <div className="font-lato w-screen h-full scroll-smooth transition-colors">
+        <div className="font-lato w-full h-full scroll-smooth transition-colors">
           <Navbar></Navbar>
           <div className="w-11/12 mx-auto sm:w-9/12 lg:w-8/12 2xl:w-7/12">
             <div className="flex flex-col gap-10 pt-30 pb-10">
