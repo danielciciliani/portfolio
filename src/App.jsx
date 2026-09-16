@@ -9,7 +9,7 @@ import Scroll from "./utils/Animations/Scroll";
 import FadeIn from "./utils/Animations/FadeIn";
 import FadeInFromBottom from "./utils/Animations/FadeInFromBottom";
 import Contact from "./components/Contact/Contact";
-import { ContactLink, Links } from "./utils/LinksData";
+import { ContactLink, Links } from "./utils/data/LinksData";
 import Navbar from "./components/Navbar/Navbar";
 
 import "./index.css";

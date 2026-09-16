@@ -12,7 +12,7 @@ import {
   Motion,
   Vite,
   Vitest,
-} from "./TechIcons";
+} from "../TechIcons";
 
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
@@ -156,21 +156,6 @@ export const ProjectsData = [
       { icon: buttonIcons.preview, name: "Preview", link: "https://ixia.es/" },
     ],
     image: "projects/ix.webp",
-    visible: true,
-  },
-  {
-    id: 6,
-    name: "Coaching",
-    tech: [tech.javascript, tech.html, tech.sass, tech.php],
-    details: `Corporate website with integrated appointment scheduling.`,
-    buttons: [
-      {
-        icon: buttonIcons.preview,
-        name: "Preview",
-        link: "https://pleasecomein.co.uk",
-      },
-    ],
-    image: "projects/pci.webp",
     visible: true,
   },
 ];

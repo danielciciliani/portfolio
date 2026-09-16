@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import FadeInFromBottom from "../../utils/Animations/FadeInFromBottom";
-import { ProjectsData } from "../../utils/ProjectsData";
+import { ProjectsData } from "../../utils/data/ProjectsData";
 
 function Projects() {
   const projects = ProjectsData;

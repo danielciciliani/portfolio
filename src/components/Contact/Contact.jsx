@@ -1,5 +1,4 @@
-import FadeIn from "../../utils/Animations/FadeIn";
-import { mailTo } from "../../utils/LinksData";
+import { mailTo } from "../../utils/data/LinksData";
 
 function Contact({ children }) {
   return (

@@ -1,5 +1,5 @@
 import FadeInFromBottom from "../../utils/Animations/FadeInFromBottom";
-import { ExperienceData } from "../../utils/ExperienceData";
+import { ExperienceData } from "../../utils/data/ExperienceData";
 
 function Experience() {
   const experiences = ExperienceData;
